@@ -1,0 +1,88 @@
+@import './variables';
+
+.servicos {
+  min-height: 100vh;
+  padding: 80px 0;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 60px;
+
+    h1 {
+      font-size: 3rem;
+      color: $primary-color;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: $secondary-color;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+  }
+
+  .service-card {
+    background-color: $white-color;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-icon {
+      font-size: 4rem;
+      color: $primary-color;
+      margin-bottom: 25px;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      color: $primary-color;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: $secondary-color;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .features-list {
+      list-style: none;
+      padding: 0;
+
+      li {
+        color: $secondary-color;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        position: relative;
+
+        &:before {
+          content: '✓';
+          color: $primary-color;
+          font-weight: bold;
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+

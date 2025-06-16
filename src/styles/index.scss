@@ -1,0 +1,16 @@
+@import './variables';
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: $dark-gray;
+  background-color: $light-gray;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $primary-color;
+}
+
+

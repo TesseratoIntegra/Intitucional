@@ -1,0 +1,89 @@
+/* Sobre Page Styles */
+.sobre {
+  min-height: 100vh;
+  padding: 80px 0;
+}
+
+.sobre .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sobre .page-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sobre .page-header h1 {
+  font-size: 3rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.sobre .page-header p {
+  font-size: 1.2rem;
+  color: #6c757d;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.sobre .content-section {
+  margin-bottom: 60px;
+}
+
+.sobre .content-section h2 {
+  font-size: 2.2rem;
+  color: #007bff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sobre .content-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #6c757d;
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sobre .values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.sobre .value-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.sobre .value-card:hover {
+  transform: translateY(-5px);
+}
+
+.sobre .value-card .value-icon {
+  font-size: 3rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.sobre .value-card h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.sobre .value-card p {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
