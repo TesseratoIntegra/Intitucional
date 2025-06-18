@@ -8,18 +8,18 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="bg-zinc-900 text-white">
+    <nav className="bg-zinc-900 text-white quicksand">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-            <Image src='/img/logo.png' alt='' width={300} height={300} className='w-auto h-full'></Image>
+            <Image src='/img/logo.png' alt='' width={300} height={300} className='w-auto h-[90%] animate-fade animate-delay-[1400ms]'></Image>
           <div className="hidden md:flex space-x-6">
-            <Link href="/" className="hover:text-indigo-300 transition">
+            <Link href="/" className="hover:text-white bg-gradient-to-r from-blue-300 to-indigo-200 bg-clip-text text-transparent animate-fade animate-delay-[1400ms] duration-300">
               Início
             </Link>
-            <Link href="/sobre" className="hover:text-indigo-300 transition">
+            <Link href="/sobre" className="hover:text-white bg-gradient-to-r from-blue-300 to-indigo-200 bg-clip-text text-transparent animate-fade animate-delay-[1700ms] duration-300">
               Sobre
             </Link>
-            <Link href="/contato" className="hover:text-indigo-300 transition">
+            <Link href="/contato" className="hover:text-white bg-gradient-to-r from-blue-300 to-indigo-200 bg-clip-text text-transparent animate-fade animate-delay-[2000ms] duration-300">
               Contato
             </Link>
           </div>

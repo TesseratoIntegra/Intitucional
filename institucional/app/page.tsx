@@ -9,13 +9,15 @@ export default function App() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 1900);
+    }, 1200);
     return () => clearTimeout(timeout);
   }, []);
 
   return (
     <div className="w-full h-auto min-h-screen bg-zinc-950">
-      <Navbar></Navbar>
+      <div className={`${loading ? 'opacity-0' : 'opacity-100'}`}>
+        <Navbar></Navbar>
+      </div>
       <div className={`fixed inset-0 transition-opacity duration-700 ${loading ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
         <HomeLoader />
       </div>
