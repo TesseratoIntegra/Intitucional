@@ -132,7 +132,7 @@ export default function ServicesPage(){
                     <div className="text-center">
                         <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white quicksand animate-fade-up animate-delay-[700ms]">
                             Nossos {' '}
-                            <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Serviços</span>
+                            <span className="animated-gradient-smooth">Serviços</span>
                         </h1>
                         <p className="text-xl lg:text-2xl text-zinc-300 mb-8 leading-relaxed max-w-4xl mx-auto animate-fade-up animate-delay-[900ms]">
                             Soluções completas para potencializar seu ERP e otimizar seu negócio.
@@ -182,7 +182,7 @@ export default function ServicesPage(){
             <section className="py-16">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4 quicksand bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
+                        <h2 className="text-4xl font-bold mb-4 quicksand animated-gradient-smooth">
                             Por que escolher nossas soluções?
                         </h2>
                         <p className="text-xl text-zinc-300 max-w-3xl mx-auto">
@@ -217,7 +217,7 @@ export default function ServicesPage(){
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold mb-4 quicksand text-white">
-                            Como <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Trabalhamos</span>
+                            Como <span className="animated-gradient-smooth">Trabalhamos</span>
                         </h2>
                         <p className="text-xl text-zinc-300 max-w-3xl mx-auto">
                             Processo estruturado para garantir o sucesso do seu projeto
@@ -267,7 +267,7 @@ export default function ServicesPage(){
             {/* CTA Section */}
             <section className="py-16 bg-gradient-to-r from-zinc-800 to-zinc-900">
                 <div className="max-w-4xl mx-auto text-center px-6">
-                    <h2 className="text-4xl font-bold mb-6 quicksand bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
+                    <h2 className="text-4xl font-bold mb-6 quicksand animated-gradient-smooth">
                         Pronto para transformar sua operação?
                     </h2>
                     <p className="text-xl text-zinc-300 mb-8 leading-relaxed">

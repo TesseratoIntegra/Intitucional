@@ -15,7 +15,7 @@ export default function Sobre(){
                 <div className="relative max-w-7xl mx-auto px-6 pt-24 h-72">
                     <div className="text-center">
                         <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white quicksand animate-fade-up animate-delay-[1600ms]">
-                            <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Sobre Nós</span>
+                            <span className="animated-gradient-smooth">Sobre Nós</span>
                         </h1>
                         <p className="text-lg lg:text-xl text-zinc-300 mb-8 leading-relaxed max-w-4xl mx-auto animate-fade-up animate-delay-[1900ms]">
                             Conheça nossa história, missão e os valores que nos guiam na criação de soluções inovadoras
@@ -30,7 +30,7 @@ export default function Sobre(){
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div>
                             <h2 className="text-3xl lg:text-4xl font-bold mb-6 quicksand text-white">
-                                Nossa <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Missão</span>
+                                Nossa <span className="animated-gradient-smooth">Missão</span>
                             </h2>
                             <p className="text-xl text-zinc-300 mb-6 leading-relaxed">
                                 Acreditamos que um ERP sozinho não basta para impulsionar verdadeiramente uma operação. Nossa missão é desenvolver ferramentas inteligentes e microserviços que trabalham em perfeita harmonia com seu sistema principal, potencializando cada aspecto do seu negócio.
@@ -86,7 +86,7 @@ export default function Sobre(){
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold mb-4 quicksand text-white">
-                            Nossa <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Abordagem</span>
+                            Nossa <span className="animated-gradient-smooth">Abordagem</span>
                         </h2>
                         <p className="text-xl text-zinc-300 max-w-4xl mx-auto leading-relaxed">
                             Trabalhamos com uma metodologia ágil e colaborativa, sempre priorizando a integração simples e segura com seus sistemas existentes. 
@@ -191,7 +191,7 @@ export default function Sobre(){
             {/* CTA Section */}
             <section className="py-12 lg:py-20 bg-gradient-to-r from-zinc-800">
                 <div className="max-w-4xl mx-auto text-center px-6">
-                    <h2 className="text-4xl font-bold mb-6 quicksand bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
+                    <h2 className="text-4xl font-bold mb-6 quicksand animated-gradient-smooth">
                         Vamos trabalhar juntos?
                     </h2>
                     <p className="text-xl text-zinc-300 mb-8">

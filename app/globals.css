@@ -19,3 +19,85 @@ body{
   font-weight: 300;
   font-style: normal;
 }
+
+
+ @keyframes gradient-flow {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .animated-gradient {
+            background: linear-gradient(
+                -45deg,
+                #60a5fa,
+                #818cf8,
+                #a78bfa,
+                #60a5fa,
+                #818cf8
+            );
+            background-size: 400% 400%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient-flow 3s ease infinite;
+        }
+        
+        /* Versão mais suave */
+        .animated-gradient-smooth {
+            background: linear-gradient(
+                90deg,
+                #60a5fa 0%,
+                #818cf8 25%,
+                #a78bfa 50%,
+                #818cf8 75%,
+                #60a5fa 100%
+            );
+            background-size: 200% 100%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient-slide 4s linear infinite;
+        }
+        
+        @keyframes gradient-slide {
+            0% {
+                background-position: 200% 0;
+            }
+            100% {
+                background-position: -200% 0;
+            }
+        }
+        
+        /* Versão pulsante */
+        .animated-gradient-pulse {
+            background: linear-gradient(
+                45deg,
+                #60a5fa,
+                #818cf8,
+                #a78bfa,
+                #60a5fa
+            );
+            background-size: 300% 300%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient-pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes gradient-pulse {
+            0%, 100% {
+                background-position: 0% 50%;
+                filter: brightness(1);
+            }
+            50% {
+                background-position: 100% 50%;
+                filter: brightness(1.2);
+            }
+        }

@@ -26,8 +26,21 @@ export default function HomeLoader() {
           }
         }
 
+        @keyframes scaled {
+          0% {
+            transform: scale(1);
+          }
+          100% {
+            transform: scale(1.5);
+          }
+        }
+
         .pulse-scale {
           animation: pulse-scale 2s infinite ease-in-out;
+        }
+
+        .ani-scale {
+          animation: scaled 5s ease-in-out;
         }
 
         .pulse-scale-element {
@@ -35,7 +48,7 @@ export default function HomeLoader() {
         }
       `}</style>
 
-      <div className="w-full h-screen bg-black flex justify-center place-items-center">
+      <div className="w-full h-screen bg-black flex justify-center place-items-center ani-scale">
         <div>
           <div className="w-56 h-56 absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 z-40">
             <Image

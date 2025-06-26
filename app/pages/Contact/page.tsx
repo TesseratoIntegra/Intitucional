@@ -48,7 +48,7 @@ export default function Contato(){
                 <div className="relative max-w-7xl mx-auto px-6 pt-24 h-72">
                     <div className="text-center">
                         <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white quicksand animate-fade-up animate-delay-[1600ms]">
-                            Entre em <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Contato</span>
+                            Entre em <span className="animated-gradient-smooth">Contato</span>
                         </h1>
                         <p className="text-lg lg:text-xl text-zinc-300 mb-8 leading-relaxed max-w-4xl mx-auto animate-fade-up animate-delay-[1900ms]">
                             Conheça nossa história, missão e os valores que nos guiam na criação de soluções inovadoras
@@ -65,7 +65,7 @@ export default function Contato(){
                         {/* Contact Information */}
                         <div>
                             <h2 className="text-4xl font-bold mb-8 quicksand text-white">
-                                Fale <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Conosco</span>
+                                Fale <span className="animated-gradient-smooth">Conosco</span>
                             </h2>
                             <p className="text-xl text-zinc-300 mb-8 leading-relaxed">
                                 Nossa equipe está pronta para entender suas necessidades e criar soluções sob medida para seu negócio.
@@ -258,7 +258,7 @@ export default function Contato(){
             {/* CTA Section */}
             <section className="py-12 lg:py-20 bg-gradient-to-r from-zinc-800">
                 <div className="max-w-4xl mx-auto text-center px-6">
-                    <h2 className="text-4xl font-bold mb-6 quicksand bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
+                    <h2 className="text-4xl font-bold mb-6 quicksand animated-gradient-smooth">
                         Resposta Rápida Garantida
                     </h2>
                     <p className="text-xl text-zinc-300 mb-8">

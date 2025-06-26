@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 import { useAppContext } from "@/context/AppContext";
+import Link from 'next/link';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -12,7 +13,12 @@ export default function Navbar() {
     <nav className="bg-zinc-900 text-white quicksand fixed top-0 left-0 w-full z-50 duration-300 animate-fade animate-delay-[1300ms]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          <Image src='/img/logo.png' alt='' width={300} height={300} className='w-auto h-[90%] animate-fade animate-delay-[1400ms]'></Image>
+
+          <Link href='/' className='flex justify-center items-center h-20 group'>
+            <Image src='/img/tesserato.png' alt='' width={300} height={300} className='w-auto h-[57%] animate-fade animate-delay-[1400ms] rotate-0 group-hover:rotate-[120deg] duration-300'></Image>
+            <Image src='/img/type.png' alt='' width={300} height={300} className='w-auto h-[90%] ml-[-0.3rem] animate-fade animate-delay-[1400ms]'></Image>
+          </Link>
+
           <div className="hidden md:flex space-x-6">
             <div className={`hover:text-white bg-gradient-to-r from-blue-300 to-indigo-200 bg-clip-text animate-fade animate-delay-[1400ms] ${page === 'home' ? 'text-white' : 'text-transparent'} w-16 text-center cursor-pointer duration-300`} 
               onClick={()=> setPage('home')}>
