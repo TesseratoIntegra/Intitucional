@@ -4,37 +4,47 @@ import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 import Link from 'next/link';
 import { usePathname } from 'next/navigation'
+import ThemeSwitch from './ThemeSwitch';
 
 export default function Navbar() {
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className={`backdrop-blur-sm bg-zinc-900/65 border-indigo-500/30 border-b text-white quicksand fixed top-0 left-0 w-full z-50 duration-300 ${pathname === '/' && 'animate-fade animate-delay-[1300ms]'}`}>
+    <>
+    <div className="bg-zinc-200 dark:bg-zinc-900 w-full h-16"></div>
+    <nav className={`backdrop-blur-sm bg-white/70 dark:bg-zinc-900/65 border-indigo-500/30 border-b text-white quicksand fixed top-0 left-0 w-full z-50 duration-300 ${pathname === '/' && 'animate-fade animate-delay-[1300ms]'}`}>
+      <ThemeSwitch/>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
 
-          <Link href='/' className='flex justify-center items-center h-20 group'>
-            <Image src='/img/tesserato.png' alt='' width={300} height={300} className={`w-12 h-[57%] ${pathname === '/' && 'animate-fade animate-delay-[1400ms]'} rotate-0 group-hover:rotate-[120deg] duration-300`}></Image>
-            <Image src='/img/type.png' alt='' width={300} height={300} className={`w-44 h-[90%] ml-[-0.3rem] ${pathname === '/' && 'animate-fade animate-delay-[1400ms]'}`}></Image>
-          </Link>
+        <Link href='/' className='flex justify-center items-center h-20 group'>
+          <div className={`w-12 h-[57%] ${pathname === '/' && 'animate-fade animate-delay-[1400ms]'} rotate-0 group-hover:rotate-[120deg] relative duration-300`}>
+            <Image src='/img/tesserato.png' alt='' fill className='hidden dark:inline absolute select-none object-contain' />
+            <Image src='/img/tesserato-dark.png' alt='' fill className='dark:hidden opacity-85 absolute select-none object-contain' />
+          </div>
+          <div className={`w-44 h-[90%] ml-[-0.3rem] ${pathname === '/' && 'animate-fade animate-delay-[1400ms]'} relative`}>
+            <Image src='/img/type.png' alt='' fill className='hidden dark:inline absolute select-none object-contain' />
+            <Image src='/img/type-dark.png' alt='' fill className='dark:hidden opacity-85 absolute select-none object-contain' />
+          </div>
+        </Link>
 
-          <div className="hidden md:flex space-x-6">
-            <Link href='/' className={`hover:text-white bg-gradient-to-r from-blue-300 to-indigo-200 bg-clip-text ${pathname === '/' && 'animate-fade animate-delay-[1400ms]'} ${pathname === '/' ? 'text-white' : 'text-transparent'} w-16 text-center cursor-pointer duration-300`} >
+          <div className="hidden md:flex space-x-6 mr-12">
+            <Link href='/' className={`hover:text-zinc-500 dark:hover:text-white bg-gradient-to-r dark:from-blue-300 from-blue-900 dark:to-indigo-200 to-indigo-900 bg-clip-text ${pathname === '/' && 'animate-fade animate-delay-[1400ms]'} ${pathname === '/' ? 'text-zinc-800 dark:text-white' : 'text-transparent'} w-16 text-center cursor-pointer duration-300`} >
               <p>Início</p>
-              <div className={`${pathname === '/' ? 'w-full' : 'w-0'} h-[1px] bg-white duration-300`}></div>
+              <div className={`${pathname === '/' ? 'w-full' : 'w-0'} h-[1px] bg-zinc-600 dark:bg-white duration-300`}></div>
             </Link>
-            <Link href='/services' className={`hover:text-white bg-gradient-to-r from-blue-300 to-indigo-200 bg-clip-text ${pathname === '/' && 'animate-fade animate-delay-[1700ms]'} ${pathname === '/services' ? 'text-white' : 'text-transparent'} w-16 text-center cursor-pointer duration-300`} >
+            <Link href='/services' className={`hover:text-zinc-500 dark:hover:text-white bg-gradient-to-r from-blue-300 to-indigo-200 bg-clip-text ${pathname === '/' && 'animate-fade animate-delay-[1700ms]'} ${pathname === '/services' ? 'text-zinc-900 dark:text-white' : 'text-zinc-800 dark:text-transparent'} w-16 text-center cursor-pointer duration-300`} >
               <p>Serviços</p>
-              <div className={`${pathname === '/services' ? 'w-full' : 'w-0'} h-[1px] bg-white duration-300`}></div>
+              <div className={`${pathname === '/services' ? 'w-full' : 'w-0'} h-[1px] bg-zinc-600 dark:bg-white duration-300`}></div>
             </Link>
-            <Link href='/about' className={`hover:text-white bg-gradient-to-r from-blue-300 to-indigo-200 bg-clip-text ${pathname === '/' && 'animate-fade animate-delay-[2000ms]'} ${pathname === '/about' ? 'text-white' : 'text-transparent'} w-16 text-center cursor-pointer duration-300`} >
+            <Link href='/about' className={`hover:text-zinc-500 dark:hover:text-white bg-gradient-to-r from-blue-300 to-indigo-200 bg-clip-text ${pathname === '/' && 'animate-fade animate-delay-[2000ms]'} ${pathname === '/about' ? 'text-zinc-900 dark:text-white' : 'text-zinc-800 dark:text-transparent'} w-16 text-center cursor-pointer duration-300`} >
               <p>Sobre</p>
-              <div className={`${pathname === '/about' ? 'w-full' : 'w-0'} h-[1px] bg-white duration-300`}></div>
+              <div className={`${pathname === '/about' ? 'w-full' : 'w-0'} h-[1px] bg-zinc-600 dark:bg-white duration-300`}></div>
             </Link>
-            <Link href='/contact' className={`hover:text-white bg-gradient-to-r from-blue-300 to-indigo-200 bg-clip-text ${pathname === '/' && 'animate-fade animate-delay-[2300ms]'} ${pathname === '/contact' ? 'text-white' : 'text-transparent'} w-16 text-center cursor-pointer duration-300`} >
+            <Link href='/contact' className={`hover:text-zinc-500 dark:hover:text-white bg-gradient-to-r from-blue-300 to-indigo-200 bg-clip-text ${pathname === '/' && 'animate-fade animate-delay-[2300ms]'} ${pathname === '/contact' ? 'text-zinc-900 dark:text-white' : 'text-zinc-800 dark:text-transparent'} w-16 text-center cursor-pointer duration-300`} >
               <p>Contato</p>
-              <div className={`${pathname === '/contact' ? 'w-full' : 'w-0'} h-[1px] bg-white duration-300`}></div>
+              <div className={`${pathname === '/contact' ? 'w-full' : 'w-0'} h-[1px] bg-zinc-600 dark:bg-white duration-300`}></div>
             </Link>
           </div>
           <button onClick={() => setOpen(!open)} className="md:hidden">
@@ -61,7 +71,7 @@ export default function Navbar() {
               Contato
           </Link>
         </div>
-
     </nav>
+    </>
   )
 }

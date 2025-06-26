@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tailwindcss-animated";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 body{
   overflow-y: hidden;

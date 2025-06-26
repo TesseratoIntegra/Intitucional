@@ -25,8 +25,6 @@ export default function Banner() {
   }, []);
 
   return (
-    <>
-      <div className="bg-zinc-900 w-full h-16"></div>
       <header className={`bg-gradient-to-r from-blue-700 to-indigo-600 text-white h-40 md:h-48 pt-20 md:pt-22 lg:h-58 xl:h-auto lg:pt-12 lg:pb-10 `}>
         <div className="max-w-7xl mx-auto px-6 text-center flex justify-center">
           <div className="text-xl md:text-4xl lg:text-4xl 2xl:text-5xl font-bold mb-4 xl:flex justify-start gap-3 flex-wrap">
@@ -44,6 +42,5 @@ export default function Banner() {
           </div>
         </div>
       </header>
-    </>
   );
 }

@@ -48,64 +48,64 @@ export default function Contato(){
             <Hero title='Entre em Contato' description='Conheça nossa história, missão e os valores que nos guiam na criação de soluções inovadoras'/>
 
             {/* Contact Info & Form Section */}
-            <section className="py-12 lg:py-16 bg-zinc-800/50 animate-fade-up">
+            <section className="py-12 lg:py-16 bg-zinc-50 dark:bg-zinc-800/50 animate-fade-up">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
                         
                         {/* Contact Information */}
                         <div>
-                            <h2 className="text-4xl font-bold mb-8 quicksand text-white">
-                                Fale <span className="animated-gradient-smooth">Conosco</span>
+                            <h2 className="text-4xl font-bold mb-8 quicksand text-zinc-800 dark:text-white">
+                                Fale <span className="text-indigo-700 dark:animated-gradient-smooth">Conosco</span>
                             </h2>
-                            <p className="text-xl text-zinc-300 mb-8 leading-relaxed">
+                            <p className="text-xl text-zinc-700 dark:text-zinc-300 mb-8 leading-relaxed">
                                 Nossa equipe está pronta para entender suas necessidades e criar soluções sob medida para seu negócio.
                             </p>
 
                             <div className="space-y-6">
-                                <div className="flex items-center space-x-4 p-4 bg-zinc-800 border border-zinc-700 hover:border-blue-500/50 duration-300 group">
-                                    <div className="bg-zinc-700 group-hover:bg-blue-600 p-3 duration-300">
-                                        <Mail className="w-6 h-6 text-blue-500 group-hover:text-white duration-300" />
+                                <div className="flex items-center space-x-4 p-4 bg-zinc-100 dark:bg-zinc-800 border border-zinc-400 dark:border-zinc-700 dark:hover:border-blue-500/50 duration-300 group rounded-sm">
+                                    <div className="bg-zinc-100 dark:bg-zinc-700 group-hover:bg-blue-600 p-3 duration-300">
+                                        <Mail className="w-6 h-6 text-blue-700 dark:text-blue-500 group-hover:text-white duration-300" />
                                     </div>
                                     <div>
-                                        <h4 className="text-white font-bold quicksand">Email</h4>
-                                        <p className="text-zinc-300">tesseratointegra@gmail.com</p>
+                                        <h4 className="text-zinc-900 dark:text-white font-bold quicksand">Email</h4>
+                                        <p className="text-zinc-700 dark:text-zinc-300">tesseratointegra@gmail.com</p>
                                     </div>
                                 </div>
 
-                                <div className="flex items-center space-x-4 p-4 bg-zinc-800 border border-zinc-700 hover:border-indigo-500/50 duration-300 group">
-                                    <div className="bg-zinc-700 group-hover:bg-indigo-600 p-3 duration-300">
-                                        <Phone className="w-6 h-6 text-indigo-500 group-hover:text-white duration-300" />
+                                <div className="flex items-center space-x-4 p-4 bg-zinc-100 dark:bg-zinc-800 border border-zinc-400 dark:border-zinc-700 dark:hover:border-indigo-500/50 duration-300 group rounded-sm">
+                                    <div className="g-zinc-100 bdark:g-zinc-700 group-hover:bg-indigo-600 p-3 duration-300">
+                                        <Phone className="w-6 h-6 text-indigo-700 dark:text-indigo-500 group-hover:text-white duration-300" />
                                     </div>
                                     <div>
-                                        <h4 className="text-white font-bold quicksand">Telefone</h4>
-                                        <p className="text-zinc-300">(16) 99241-6689</p>
+                                        <h4 className="text-zinc-900 dark:text-white font-bold quicksand">Telefone</h4>
+                                        <p className="text-zinc-700 dark:text-zinc-300">(16) 99241-6689</p>
                                     </div>
                                 </div>
 
-                                <div className="flex items-center space-x-4 p-4 bg-zinc-800 border border-zinc-700 hover:border-blue-500/50 duration-300 group">
-                                    <div className="bg-zinc-700 group-hover:bg-blue-600 p-3 duration-300">
-                                        <MapPin className="w-6 h-6 text-blue-500 group-hover:text-white duration-300" />
+                                <div className="flex items-center space-x-4 p-4 bg-zinc-100 dark:bg-zinc-800 border border-zinc-400 dark:border-zinc-700 dark:hover:border-blue-500/50 duration-300 group rounded-sm">
+                                    <div className="bg-zinc-100 dark:bg-zinc-700 group-hover:bg-blue-600 p-3 duration-300">
+                                        <MapPin className="w-6 h-6 text-blue-700 dark:text-blue-500 group-hover:text-white duration-300" />
                                     </div>
                                     <div>
-                                        <h4 className="text-white font-bold quicksand">Localização</h4>
-                                        <p className="text-zinc-300">Rua José Garcia Duarte, 182 (AP 104) - Santa Rosa de Viterbo - SP, São Paulo, Brasil</p>
+                                        <h4 className="text-zinc-900 dark:text-white font-bold quicksand">Localização</h4>
+                                        <p className="text-zinc-700 dark:text-zinc-300">Rua José Garcia Duarte, 182 (AP 104) - Santa Rosa de Viterbo - SP, São Paulo, Brasil</p>
                                     </div>
                                 </div>
 
-                                <div className="flex items-center space-x-4 p-4 bg-zinc-800 border border-zinc-700 hover:border-indigo-500/50 duration-300 group">
-                                    <div className="bg-zinc-700 group-hover:bg-indigo-600 p-3 duration-300">
-                                        <Clock className="w-6 h-6 text-indigo-500 group-hover:text-white duration-300" />
+                                <div className="flex items-center space-x-4 p-4 bg-zinc-100 dark:bg-zinc-800 border border-zinc-400 dark:border-zinc-700 dark:hover:border-indigo-500/50 duration-300 group rounded-sm">
+                                    <div className="bg-zinc-100 dark:bg-zinc-700 group-hover:bg-indigo-600 p-3 duration-300">
+                                        <Clock className="w-6 h-6 text-indigo-700 dark:text-indigo-500 group-hover:text-white duration-300" />
                                     </div>
                                     <div>
-                                        <h4 className="text-white font-bold quicksand">Horário</h4>
-                                        <p className="text-zinc-300">Segunda à Sexta: 8h às 18h</p>
+                                        <h4 className="text-zinc-900 dark:text-white font-bold quicksand">Horário</h4>
+                                        <p className="text-zinc-700 dark:text-zinc-300">Segunda à Sexta: 8h às 18h</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         {/* Contact Form */}
-                        <div className="bg-zinc-800 opacity-40 p-8 border border-zinc-700 pointer-events-none">
+                        <div className="bg-zinc-800 opacity-20 rounded-sm dark:opacity-40 p-8 border border-zinc-700 pointer-events-none">
                             <div className="flex items-center space-x-3 mb-8">
                                 <div className="bg-blue-600 p-3">
                                     <MessageSquare className="w-8 h-8 text-white" />
@@ -246,16 +246,16 @@ export default function Contato(){
             </section>
 
             {/* CTA Section */}
-            <section className="py-12 lg:py-20 bg-gradient-to-r from-zinc-800">
+            <section className="py-12 lg:py-20 bg-gradient-to-r bg-zinc-200 dark:from-zinc-800">
                 <div className="max-w-4xl mx-auto text-center px-6">
                     <ScrollReveal animation="fadeInUp" delay={100}>
-                        <h2 className="text-4xl font-bold mb-6 quicksand animated-gradient-smooth">
+                        <h2 className="text-4xl font-bold mb-6 quicksand text-indigo-700 dark:animated-gradient-smooth">
                             Resposta Rápida Garantida
                         </h2>
                     </ScrollReveal>
 
                     <ScrollReveal animation="fadeInUp" delay={200}>
-                        <p className="text-xl text-zinc-300 mb-8">
+                        <p className="text-xl text-zinc-800 dark:text-zinc-300 mb-8">
                             Nossa equipe responde todas as mensagens em até 24 horas. Estamos ansiosos para conhecer seu projeto!
                         </p>
                     </ScrollReveal>
@@ -264,31 +264,31 @@ export default function Contato(){
 
                         <ScrollReveal animation="fadeInUp" delay={300}>
                             <div className="text-center">
-                                <div className="bg-blue-600 p-4 inline-block mb-3">
+                                <div className="bg-blue-600 p-4 inline-block mb-3 rounded-sm">
                                     <Clock className="w-8 h-8" />
                                 </div>
-                                <h4 className="font-bold text-blue-400 quicksand">24 Horas</h4>
-                                <p className="text-sm text-zinc-400">Tempo de resposta</p>
+                                <h4 className="font-bold text-blue-700 dark:text-blue-400 quicksand">24 Horas</h4>
+                                <p className="text-sm text-zinc-800 dark:text-zinc-400">Tempo de resposta</p>
                             </div>
                         </ScrollReveal>                
 
                         <ScrollReveal animation="fadeInUp" delay={500}>
                             <div className="text-center">
-                                <div className="bg-indigo-600 p-4 inline-block mb-3">
+                                <div className="bg-indigo-600 p-4 inline-block mb-3 rounded-sm">
                                     <MessageSquare className="w-8 h-8" />
                                 </div>
-                                <h4 className="font-bold text-indigo-400 quicksand">Consultoria</h4>
-                                <p className="text-sm text-zinc-400">Inicial gratuita</p>
+                                <h4 className="font-bold text-blue-700 dark:text-indigo-400 quicksand">Consultoria</h4>
+                                <p className="text-sm text-zinc-800 dark:text-zinc-400">Inicial gratuita</p>
                             </div>
                         </ScrollReveal>
 
                         <ScrollReveal animation="fadeInUp" delay={700}>
                             <div className="text-center">
-                                <div className="bg-blue-600 p-4 inline-block mb-3">
+                                <div className="bg-blue-600 p-4 inline-block mb-3 rounded-sm">
                                     <User className="w-8 h-8" />
                                 </div>
-                                <h4 className="font-bold text-blue-400 quicksand">Especialistas</h4>
-                                <p className="text-sm text-zinc-400">Equipe dedicada</p>
+                                <h4 className="font-bold text-blue-700 dark:text-blue-400 quicksand">Especialistas</h4>
+                                <p className="text-sm text-zinc-800 dark:text-zinc-400">Equipe dedicada</p>
                             </div>
                         </ScrollReveal>
 
