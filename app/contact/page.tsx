@@ -1,11 +1,12 @@
 'use client'
-import { useAppContext } from "@/context/AppContext";
 import { Mail, Phone, MapPin, Clock, MessageSquare, User, Building2 } from 'lucide-react';
 import { useState } from 'react';
 import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
+import ScrollReveal from '@/components/ScrollReveal';
 
 export default function Contato(){
-    const { page } = useAppContext()
     const [formData, setFormData] = useState({
         nome: '',
         email: '',
@@ -40,25 +41,14 @@ export default function Contato(){
     }
 
     return(
-        <div className={`bg-zinc-900 h-screen overflow-x-auto ${page === 'contact' ? 'min-w-[100vw]' : 'min-w-0 text-nowrap'} duration-300`}>
+        <div className={`bg-zinc-900 h-screen overflow-x-auto duration-300`}>
 
-            {/* Hero Section */}
-            <section className="relative overflow-hidden animate-fade animate-delay-[1500ms]">
-                <div className="absolute inset-0 bg-gradient-to-r from-zinc-900 via-zinc-900 to-indigo-900/20"></div>
-                <div className="relative max-w-7xl mx-auto px-6 pt-24 h-72">
-                    <div className="text-center">
-                        <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white quicksand animate-fade-up animate-delay-[1600ms]">
-                            Entre em <span className="animated-gradient-smooth">Contato</span>
-                        </h1>
-                        <p className="text-lg lg:text-xl text-zinc-300 mb-8 leading-relaxed max-w-4xl mx-auto animate-fade-up animate-delay-[1900ms]">
-                            Conheça nossa história, missão e os valores que nos guiam na criação de soluções inovadoras
-                        </p>
-                    </div>
-                </div>
-            </section>
+            <Navbar/>
+
+            <Hero title='Entre em Contato' description='Conheça nossa história, missão e os valores que nos guiam na criação de soluções inovadoras'/>
 
             {/* Contact Info & Form Section */}
-            <section className="py-12 lg:py-16 bg-zinc-800/50">
+            <section className="py-12 lg:py-16 bg-zinc-800/50 animate-fade-up">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
                         
@@ -258,34 +248,50 @@ export default function Contato(){
             {/* CTA Section */}
             <section className="py-12 lg:py-20 bg-gradient-to-r from-zinc-800">
                 <div className="max-w-4xl mx-auto text-center px-6">
-                    <h2 className="text-4xl font-bold mb-6 quicksand animated-gradient-smooth">
-                        Resposta Rápida Garantida
-                    </h2>
-                    <p className="text-xl text-zinc-300 mb-8">
-                        Nossa equipe responde todas as mensagens em até 24 horas. Estamos ansiosos para conhecer seu projeto!
-                    </p>
+                    <ScrollReveal animation="fadeInUp" delay={100}>
+                        <h2 className="text-4xl font-bold mb-6 quicksand animated-gradient-smooth">
+                            Resposta Rápida Garantida
+                        </h2>
+                    </ScrollReveal>
+
+                    <ScrollReveal animation="fadeInUp" delay={200}>
+                        <p className="text-xl text-zinc-300 mb-8">
+                            Nossa equipe responde todas as mensagens em até 24 horas. Estamos ansiosos para conhecer seu projeto!
+                        </p>
+                    </ScrollReveal>
+
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
-                        <div className="text-center">
-                            <div className="bg-blue-600 p-4 inline-block mb-3">
-                                <Clock className="w-8 h-8" />
+
+                        <ScrollReveal animation="fadeInUp" delay={300}>
+                            <div className="text-center">
+                                <div className="bg-blue-600 p-4 inline-block mb-3">
+                                    <Clock className="w-8 h-8" />
+                                </div>
+                                <h4 className="font-bold text-blue-400 quicksand">24 Horas</h4>
+                                <p className="text-sm text-zinc-400">Tempo de resposta</p>
                             </div>
-                            <h4 className="font-bold text-blue-400 quicksand">24 Horas</h4>
-                            <p className="text-sm text-zinc-400">Tempo de resposta</p>
-                        </div>
-                        <div className="text-center">
-                            <div className="bg-indigo-600 p-4 inline-block mb-3">
-                                <MessageSquare className="w-8 h-8" />
+                        </ScrollReveal>                
+
+                        <ScrollReveal animation="fadeInUp" delay={500}>
+                            <div className="text-center">
+                                <div className="bg-indigo-600 p-4 inline-block mb-3">
+                                    <MessageSquare className="w-8 h-8" />
+                                </div>
+                                <h4 className="font-bold text-indigo-400 quicksand">Consultoria</h4>
+                                <p className="text-sm text-zinc-400">Inicial gratuita</p>
                             </div>
-                            <h4 className="font-bold text-indigo-400 quicksand">Consultoria</h4>
-                            <p className="text-sm text-zinc-400">Inicial gratuita</p>
-                        </div>
-                        <div className="text-center">
-                            <div className="bg-blue-600 p-4 inline-block mb-3">
-                                <User className="w-8 h-8" />
+                        </ScrollReveal>
+
+                        <ScrollReveal animation="fadeInUp" delay={700}>
+                            <div className="text-center">
+                                <div className="bg-blue-600 p-4 inline-block mb-3">
+                                    <User className="w-8 h-8" />
+                                </div>
+                                <h4 className="font-bold text-blue-400 quicksand">Especialistas</h4>
+                                <p className="text-sm text-zinc-400">Equipe dedicada</p>
                             </div>
-                            <h4 className="font-bold text-blue-400 quicksand">Especialistas</h4>
-                            <p className="text-sm text-zinc-400">Equipe dedicada</p>
-                        </div>
+                        </ScrollReveal>
+
                     </div>
                 </div>
             </section>

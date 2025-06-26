@@ -19,7 +19,7 @@ export default function Footer() {
               className="w-auto h-16 sm:h-20 mb-4"
             />
             <p className="text-zinc-300 text-sm sm:text-base max-w-md leading-relaxed">
-              Desenvolvemos ferramentas inteligentestes que trabalham ao lado do seu ERP, 
+              Desenvolvemos ferramentas inteligentes que trabalham ao lado do seu ERP, 
               potencializando sua operação com soluções sob medida.
             </p>
           </div>

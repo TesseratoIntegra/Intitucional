@@ -5,12 +5,15 @@ import ScrollReveal from "@/components/ScrollReveal";
 import Banner from '@/app/pages/Home/components/Banner'
 import Videos from '@/app/pages/Home/components/Videos'
 import Footer from '@/components/Footer'
+import Navbar from "@/components/Navbar";
 
 export default function Home(){
     const { page, setPage } = useAppContext()
 
     return(
         <div className={`bg-zinc-900 h-screen overflow-x-auto ${page === 'home' ? 'min-w-[100vw]' : 'min-w-0 text-nowrap'} duration-300`}>
+
+            <Navbar/>
 
             <Banner/>
 
@@ -61,7 +64,7 @@ export default function Home(){
                         </ScrollReveal>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <ScrollReveal animation="fadeInUp" delay={300}>
+                        <ScrollReveal animation="fadeInUp" delay={200}>
                             <div className="bg-zinc-800 p-8 border border-zinc-700 hover:border-blue-500/50 duration-300 group rounded-sm">
                                 <div className="flex items-start space-x-4">
                                     <div className="bg-zinc-700 group-hover:bg-blue-600 border border-zinc-600 p-3 text-2xl duration-300 rounded-sm">
@@ -79,7 +82,7 @@ export default function Home(){
                             </div>
                         </ScrollReveal>
  
-                        <ScrollReveal animation="fadeInUp" delay={450}> 
+                        <ScrollReveal animation="fadeInUp" delay={300}> 
                             <div className="bg-zinc-800 p-8 border border-zinc-700 hover:border-indigo-500/50 duration-300 group rounded-sm">
                                 <div className="flex items-start space-x-4">
                                     <div className="bg-zinc-700 group-hover:bg-indigo-600 border border-zinc-600 p-3 text-2xl duration-300 rounded-sm">
@@ -97,7 +100,7 @@ export default function Home(){
                             </div>
                         </ScrollReveal>
 
-                        <ScrollReveal animation="fadeInUp" delay={550}>
+                        <ScrollReveal animation="fadeInUp" delay={400}>
                             <div className="bg-zinc-800 p-8 border border-zinc-700 hover:border-blue-500/50 duration-300 group rounded-sm">
                                 <div className="flex items-start space-x-4">
                                     <div className="bg-zinc-700 group-hover:bg-blue-600 border border-zinc-600 p-3 text-2xl duration-300 rounded-sm">
@@ -115,7 +118,7 @@ export default function Home(){
                             </div>
                         </ScrollReveal>
 
-                        <ScrollReveal animation="fadeInUp" delay={650}>
+                        <ScrollReveal animation="fadeInUp" delay={550}>
                             <div className="bg-zinc-800 p-8 border border-zinc-700 hover:border-indigo-500/50 duration-300 group rounded-sm">
                                 <div className="flex items-start space-x-4">
                                     <div className="bg-zinc-700 group-hover:bg-indigo-600 border border-zinc-600 p-3 text-2xl duration-300 rounded-sm">
@@ -155,14 +158,14 @@ export default function Home(){
                             </p>
                         </ScrollReveal>
 
-                        <ScrollReveal animation="fadeInUp" delay={500}>
+                        <ScrollReveal animation="fadeInUp" delay={400}>
                             <p className="text-lg text-zinc-300 mb-8 leading-relaxed">
                                 Nossa equipe especializada trabalha para entender suas necessidades específicas e criar ferramentas 
                                 que realmente fazem a diferença no dia a dia da sua empresa.
                             </p>
                         </ScrollReveal>
 
-                        <ScrollReveal animation="fadeInUp" delay={700}>
+                        <ScrollReveal animation="fadeInUp" delay={500}>
                             <p className="text-lg text-zinc-300 mb-8 leading-relaxed">
                                 Com anos de experiência em desenvolvimento de microserviços e integração com sistemas ERP, 
                                 garantimos soluções robustas e confiáveis.
@@ -171,7 +174,7 @@ export default function Home(){
 
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:mb-8">
 
-                            <ScrollReveal animation="fadeInUp" delay={800}>
+                            <ScrollReveal animation="fadeInUp" delay={100}>
                                 <div className="text-center">
                                     <div className="bg-blue-600 p-4 inline-block mb-1 rounded-full">
                                         <Shield className="w-8 h-8" />
@@ -181,7 +184,7 @@ export default function Home(){
                                 </div>
                             </ScrollReveal> 
 
-                            <ScrollReveal animation="fadeInUp" delay={1000}>
+                            <ScrollReveal animation="fadeInUp" delay={200}>
                                 <div className="text-center">
                                     <div className="bg-indigo-600 p-4 inline-block mb-1 rounded-full">
                                         <Zap className="w-8 h-8" />
@@ -191,7 +194,7 @@ export default function Home(){
                                 </div>
                             </ScrollReveal>
 
-                            <ScrollReveal animation="fadeInUp" delay={1200}>
+                            <ScrollReveal animation="fadeInUp" delay={300}>
                                 <div className="text-center">
                                     <div className="bg-blue-600 p-4 inline-block mb-1 rounded-full">
                                         <Users className="w-8 h-8" />
@@ -220,7 +223,7 @@ export default function Home(){
                             
                             <div className="border-l-2 border-dashed border-zinc-600 ml-8 h-12"></div>
                             
-                            <ScrollReveal animation="fadeInUp" delay={300}>
+                            <ScrollReveal animation="fadeInUp" delay={200}>
                                 <div className="flex items-center space-x-4 ml-8">
                                     <div className="w-12 h-12 bg-blue-600 flex items-center justify-center rounded-sm">
                                     <BarChart3 className="w-6 h-6" />
@@ -232,7 +235,7 @@ export default function Home(){
                                 </div>
                             </ScrollReveal>
                             
-                            <ScrollReveal animation="fadeInUp" delay={500}>
+                            <ScrollReveal animation="fadeInUp" delay={300}>
                                 <div className="flex items-center space-x-4 ml-8">
                                     <div className="w-12 h-12 bg-indigo-600 flex items-center justify-center rounded-sm">
                                     <Smartphone className="w-6 h-6" />
@@ -244,7 +247,7 @@ export default function Home(){
                                 </div>
                             </ScrollReveal>
                             
-                            <ScrollReveal animation="fadeInUp" delay={700}>
+                            <ScrollReveal animation="fadeInUp" delay={400}>
                                 <div className="flex items-center space-x-4 ml-8">
                                     <div className="w-12 h-12 bg-blue-600 flex items-center justify-center rounded-sm">
                                     <Target className="w-6 h-6" />
@@ -256,7 +259,7 @@ export default function Home(){
                                 </div>
                             </ScrollReveal>
                             
-                            <ScrollReveal animation="fadeInUp" delay={900}>
+                            <ScrollReveal animation="fadeInUp" delay={500}>
                                 <div className="flex items-center space-x-4 ml-8">
                                     <div className="w-12 h-12 bg-indigo-600 flex items-center justify-center rounded-sm">
                                     <TrendingUp className="w-6 h-6" />
@@ -285,13 +288,13 @@ export default function Home(){
                         </h2>
                     </ScrollReveal>
 
-                    <ScrollReveal animation="fadeInUp" delay={300}>
+                    <ScrollReveal animation="fadeInUp" delay={200}>
                         <p className="text-xl text-zinc-300 mb-8">
                             Entre em contato conosco e descubra como nossas soluções podem transformar seu negócio.
                         </p>
                     </ScrollReveal>
 
-                    <ScrollReveal animation="fadeInUp" delay={500}>
+                    <ScrollReveal animation="fadeInUp" delay={300}>
                         <button className="bg-blue-600 hover:bg-indigo-700 rounded-sm px-12 py-4 text-xl font-medium transition-colors inline-flex justify-center place-items-center items-center cursor-pointer group duration-300 lg:w-96 text-center"
                         onClick={()=>setPage('contact')}>
                             <p>Fale Conosco Agora</p>
