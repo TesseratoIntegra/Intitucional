@@ -41,7 +41,7 @@ export default function Contato(){
     }
 
     return(
-        <div className={`bg-zinc-900 h-screen overflow-x-auto duration-300`}>
+        <div className={`bg-white dark:bg-zinc-900 h-screen overflow-x-auto duration-300`}>
 
             <Navbar/>
 
