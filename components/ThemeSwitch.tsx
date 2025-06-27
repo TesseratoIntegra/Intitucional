@@ -36,7 +36,7 @@ export default function ThemeSwitch() {
   };
 
   return (
-    <div className={`absolute h-8 w-16 p-2 ${isDark ? 'bg-zinc-700' : 'bg-zinc-200'} right-5 top-4 border border-zinc-500 transition-all rounded-full cursor-pointer`} onClick={toggleTheme}>
+    <div className={`absolute h-8 w-16 p-2 ${isDark ? 'bg-zinc-700' : 'bg-zinc-200'} right-16 lg:right-5 top-4 border border-zinc-500 transition-all rounded-full cursor-pointer`} onClick={toggleTheme}>
       <div className={`w-6 h-6 absolute ${isDark ? 'left-[9%] bg-indigo-300' : 'left-[55%] bg-indigo-500'} duration-500 -translate-y-1/2 top-1/2 rounded-full flex place-items-center`}>
         <Icon.Sun className={`flex absolute left-1/2 -translate-x-1/2 text-zinc-100 ${!isDark ? 'rotate-[0deg] opacity-100' : 'rotate-[-70deg] opacity-0'} duration-500`} />
         <Icon.Moon className={`flex absolute left-1/2 -translate-x-1/2 text-zinc-800 ${isDark ? 'rotate-[0deg] opacity-100' : 'rotate-[70deg] opacity-0'} duration-500`} />
