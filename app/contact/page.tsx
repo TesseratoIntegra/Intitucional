@@ -246,7 +246,7 @@ export default function Contato(){
             </section>
 
             {/* CTA Section */}
-            <section className="py-12 lg:py-20 bg-gradient-to-r bg-zinc-200 dark:from-zinc-800">
+            <section className="py-12 lg:py-20 bg-gradient-to-r from-zinc-300 dark:from-zinc-800">
                 <div className="max-w-4xl mx-auto text-center px-6">
                     <ScrollReveal animation="fadeInUp" delay={100}>
                         <h2 className="text-4xl font-bold mb-6 quicksand text-indigo-700 dark:animated-gradient-smooth">
