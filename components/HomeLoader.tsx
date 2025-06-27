@@ -48,12 +48,20 @@ export default function HomeLoader() {
         }
       `}</style>
 
-      <div className="w-full h-screen bg-black flex justify-center place-items-center ani-scale">
+      <div className="w-full h-screen bg-white dark:bg-black flex justify-center place-items-center ani-scale">
         <div>
           <div className="w-56 h-56 absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 z-40">
             <Image
-              className="w-full h-full"
-              src='/img/base-overlay.png'
+              className="w-full h-full hidden dark:inline"
+              src='/img/base-overlay-dark.png'
+              width={1000}
+              height={1000}
+              alt=''
+              onLoad={() => setLoaded(true)}
+            />
+            <Image
+              className="w-full h-full dark:hidden inline"
+              src='/img/base-overlay-light.png'
               width={1000}
               height={1000}
               alt=''
@@ -64,12 +72,12 @@ export default function HomeLoader() {
           {loaded && (
             <>
               <div className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 w-52 h-52 max-w-52 max-h-52 z-30 overflow-hidden">
-                <div className="w-52 h-52 z-20 bg-radial from-indigo-500 from-70% to-[#1a1a1a] pulse-scale rounded-full flex justify-center place-items-center">
-                  <div className="w-32 h-32 z-20 bg-radial from-[#1a1a1a] from-0% to-blue-500 pulse-scale rounded-full">
+                <div className="w-52 h-52 z-20 bg-radial from-indigo-700 dark:from-indigo-500 from-70% to-white dark:to-[#1a1a1a] pulse-scale rounded-full flex justify-center place-items-center">
+                  <div className="w-32 h-32 z-20 bg-radial from-white dark:from-[#1a1a1a] from-0% to-blue-700 dark:to-blue-500 pulse-scale rounded-full">
                   </div>
                 </div>
               </div>
-              <div className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 w-52 h-52 max-w-52 max-h-52 z-20 overflow-hidden bg-[#1a1a1a]">
+              <div className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 w-52 h-52 max-w-52 max-h-52 z-20 overflow-hidden bg-white dark:bg-[#1a1a1a]">
               </div>
             </>
           )}
