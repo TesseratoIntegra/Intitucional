@@ -32,7 +32,7 @@ export default function Footer() {
           </div>
           
           {/* Soluções */}
-          <div className="col-span-1">
+          <div className="col-span-1 mt-12 lg:mt-0">
             <h3 className="font-bold text-zinc-800 dark:text-white mb-3 sm:mb-4 text-sm sm:text-base">Soluções</h3>
             <ul 
               className="space-y-2 text-zinc-300 text-sm sm:text-base cursor-pointer" 
