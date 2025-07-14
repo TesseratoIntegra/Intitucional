@@ -136,7 +136,7 @@ export default function ServicesPage(){
                         {services.map((service) => (
                             <div key={service.id}>
                                 <ScrollReveal animation="fadeInUp" delay={100}>
-                                    <div className={`bg-zinc-100 dark:bg-zinc-800 p-8 border border-zinc-400 dark:border-zinc-700 h-80 ${service.hoverColor} duration-300 group animate-fade-up rounded-sm`}>
+                                    <div className={`bg-zinc-100 dark:bg-zinc-800 p-8 border border-zinc-400 dark:border-zinc-700 min-h-80 ${service.hoverColor} duration-300 group animate-fade-up rounded-sm`}>
                                         <div className="flex items-start space-x-6">
                                             <div className={`bg-white dark:bg-zinc-700 ${service.iconBg} border border-zinc-400 dark:border-zinc-600 p-4 text-2xl duration-300 flex-shrink-0 rounded-sm`}>
                                                 <service.icon className={`w-10 h-10 text-${service.gradient.includes('blue') ? 'blue' : 'indigo'}-600 dark:text-${service.gradient.includes('blue') ? 'blue' : 'indigo'}-500 group-hover:text-white duration-300`} />
