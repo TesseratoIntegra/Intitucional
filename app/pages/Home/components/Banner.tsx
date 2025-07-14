@@ -5,7 +5,7 @@ import clsx from "clsx";
 const phrases = [
   "de conectividade entre sistemas.",
   "de decisões baseadas em dados.",
-  "ivonvar, automatizar e escalar.",
+  "inovar, automatizar e escalar.",
   "integrar seu ERP com Tesserato.",
 ];
 

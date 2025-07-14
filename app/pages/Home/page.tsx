@@ -144,7 +144,7 @@ export default function Home(){
                         <div>
 
                         <ScrollReveal animation="fadeInUp" delay={100}>
-                            <h2 className="text-4xl font-bold mb-6 quicksand">
+                            <h2 className="text-4xl font-bold mb-6 quicksand text-zinc-800 dark:text-white">
                                 Integração <span className="text-indigo-700 dark:animated-gradient-smooth">Simples e Segura</span>
                             </h2>
                         </ScrollReveal>
